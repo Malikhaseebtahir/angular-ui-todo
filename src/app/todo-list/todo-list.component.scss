@@ -4,3 +4,29 @@
   border-radius: 13px;
   width: 49rem;
 }
+
+.heading {
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.addButton {
+  position: fixed;
+  right: 31%;
+  bottom: 4%;
+  z-index: 1000;
+  margin-top: -4px;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: #880bd6;
+  border-color: #880bd6;
+}
+
+ul {
+  padding-left: 0rem;
+}
+
+[hidden] {
+  display: none !important;
+}
