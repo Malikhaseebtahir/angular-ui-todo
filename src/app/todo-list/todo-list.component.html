@@ -1,0 +1,26 @@
+<div class="container">
+  <div></div>
+  <div class="row">
+    <div class="col-lg-9 col-12">
+      <ul>
+        <div *ngIf="add">
+          <input class="newTodo" [(ngModel)]="newTodo" />
+        </div>
+        <li *ngFor="let todo of todoList" class="list-group-item">
+          <button (click)="deleteTodo(todo.id)" class="btn btn-danger btn-sm">
+            Delete
+          </button>
+          <button (click)="updateTodo(todo)" class="btn btn-primary btn-sm">
+            Update
+          </button>
+          {{ todo.title }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <button type="button" (click)="onAdd()" class="btn btn-primary">
+        Add
+      </button>
+    </div>
+  </div>
+</div>
