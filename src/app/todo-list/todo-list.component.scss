@@ -2,7 +2,7 @@
   padding: 10px;
   border-color: red;
   border-radius: 13px;
-  width: 52rem;
+  width: 28.5rem;
 }
 
 .heading {
@@ -13,8 +13,8 @@
 
 .addButton {
   position: fixed;
-  right: 31%;
-  bottom: 4%;
+  right: 6%;
+  bottom: 10%;
   z-index: 1000;
   margin-top: -4px;
   border-radius: 50%;
@@ -27,6 +27,39 @@ ul {
   padding-left: 0rem;
 }
 
-[hidden] {
-  display: none !important;
+.custom-checkbox {
+  display: inline-block;
+}
+
+.custom-checkbox input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.custom-checkbox .form-group {
+  margin: 0 12px;
+  /* adjust spacing here between check boxes*/
+}
+
+.custom-checkbox .form-group label {
+  display: flex;
+  box-sizing: border-box;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  color: #880bd6;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  font: 14px helvetica, arial, sans-serif;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+
+.custom-checkbox input:checked + label {
+  background: #880bd6;
+  color: #fff;
+  border: 1px solid #880bd6;
+  text-shadow: 0 0 2px #000;
 }

@@ -9,11 +9,22 @@
         placeholder="Start typing"
       />
       <li
-        style="padding: 1.5rem 0px"
+        style="
+          padding: 1.5rem 0px;
+          border-left: none;
+          border-top: none;
+          border-right: none;
+        "
         *ngFor="let todo of todoList"
         class="list-group-item"
       >
-        <button
+        <div class="row custom-checkbox">
+          <div class="form-group">
+            <input type="checkbox" name="week" id="ux" />
+            <label for="ux"><span>&#10003;</span></label>
+          </div>
+        </div>
+        <!-- <button
           (click)="deleteTodo(todo.id)"
           class="btn btn-danger btn-sm mx-1"
         >
@@ -21,7 +32,7 @@
         </button>
         <button (click)="updateTodo(todo)" class="btn btn-primary btn-sm mx-1">
           Update
-        </button>
+        </button> -->
         {{ todo.title }}
       </li>
     </ul>

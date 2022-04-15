@@ -48,4 +48,7 @@ export class TodoListComponent implements OnInit {
       this.todoList = this.todoList.filter((todo) => todo.id !== id);
     });
   }
+  myswiperight() {}
+
+  myswipeleft() {}
 }
