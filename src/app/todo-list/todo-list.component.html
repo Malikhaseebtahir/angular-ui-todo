@@ -3,7 +3,7 @@
     <ul>
       <h1 class="heading">Todo List</h1>
       <input
-        [hidden]="add"
+        *ngIf="add"
         class="newTodo form-control"
         [(ngModel)]="newTodo"
         placeholder="Start typing"
